@@ -1,12 +1,11 @@
 package ImageHoster.config;
 
+import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-
-import javax.persistence.EntityManagerFactory;
-import javax.sql.DataSource;
 
 @Configuration
 public class JpaConfig {
@@ -25,8 +24,7 @@ public class JpaConfig {
         ds.setDriverClassName("org.postgresql.Driver");
         ds.setUrl("jdbc:postgresql://localhost:5432/imageHoster");
         ds.setUsername("postgres");
-        ds.setPassword("Om@12345");
+        ds.setPassword("nanaiah");
         return ds;
     }
 }
-
